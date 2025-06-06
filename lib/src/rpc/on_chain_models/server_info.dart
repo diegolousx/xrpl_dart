@@ -20,7 +20,7 @@ class ServerInfo {
 class Info {
   final String? buildVersion;
   final String completeLedgers;
-  final String hostId;
+  final String? hostId;
   final int initialSyncDurationUs;
   final int ioLatencyMs;
   final int jqTransOverflow;
@@ -42,7 +42,7 @@ class Info {
   Info({
     required this.buildVersion,
     required this.completeLedgers,
-    required this.hostId,
+    this.hostId,
     required this.initialSyncDurationUs,
     required this.ioLatencyMs,
     required this.jqTransOverflow,
